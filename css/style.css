@@ -1,14 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
 body {
-  color: red; }
-
-h1, h2 {
-  background-color: green; }
-
-ul {
-  background-color: blue; }
-
-body {
   margin: 0 auto;
   max-width: 50em;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -42,5 +33,41 @@ a {
 
 .test {
   background-color: red; }
+
+.main {
+  height: 100%;
+  width: 100%;
+  background-color: gray; }
+
+ul {
+  background-color: #333; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+nav li {
+  display: inline-block; }
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.message, .success, .error {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: blue; }
 
 /*# sourceMappingURL=style.css.map */

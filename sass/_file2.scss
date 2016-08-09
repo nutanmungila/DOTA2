@@ -1,6 +1,50 @@
 //
 @import 'file1';
+$primary-color: #333;
 
 ul{
-  background-color: blue;
+  background-color: $primary-color;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+//Mixins
+@mixin border-radius($radius){
+  -webkit-border-radius:$radius;
+    -moz-border-radius: $radius;
+      -ms-border-radius:$radius;
+       border-radius: $radius;
+}
+
+.box{
+   @include border-radius(10px);
+}
+
+.message{
+  border:1px solid #ccc;
+  padding: 10px;
+  color: $primary-color;
+}
+
+.success{
+  @extend .message;
+  border-color: green;
+}
+.error{
+  @extend .message;
+  border-color: blue;
 }
