@@ -1,0 +1,76 @@
+$primary-color:white;
+$secondary-color:black;
+$primary-header-color:darkred;
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+header {
+  background-color: #263d36;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  text-align: center;
+  min-height: 10em;
+  .logo{
+      display: inline-block;
+      float: left;
+      width:30%;
+      min-height: 30%;
+      z-index: 10;
+  }
+  .navbarList{
+      float:right;
+      width: 100%;
+      background-color:$primary-header-color;
+      margin-top: -10em;
+      min-height: 2em;
+      line-height: 2em;
+      @include border-radius(0.1em);
+      nav {
+          margin-left: 12em;
+           a{
+        font-family: "Times New Roman", Georgia, Serif;
+        font-size: 150%;
+        text-shadow: 2px 2px $primary-color;
+        cursor:hand;
+      }
+      }
+     
+  }
+}
+img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+//
+
+@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ 
+    
+}
+@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    
+}
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    
+}
+@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+    
+}
+
+
+

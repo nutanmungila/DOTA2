@@ -1,73 +1,53 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
-body {
-  margin: 0 auto;
-  max-width: 50em;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  line-height: 1.5em;
-  padding: 1em 1em;
-  color: #566b78; }
+header {
+  background-color: #263d36;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  text-align: center;
+  min-height: 10em; }
+  header .logo {
+    display: inline-block;
+    float: left;
+    width: 30%;
+    min-height: 30%;
+    z-index: 10; }
+  header .navbarList {
+    float: right;
+    width: 100%;
+    background-color: darkred;
+    margin-top: -10em;
+    min-height: 2em;
+    line-height: 2em;
+    -webkit-border-radius: 0.1em;
+    -moz-border-radius: 0.1em;
+    -ms-border-radius: 0.1em;
+    border-radius: 0.1em; }
+    header .navbarList nav {
+      margin-left: 12em; }
+      header .navbarList nav a {
+        font-family: "Times New Roman", Georgia, Serif;
+        font-size: 150%;
+        text-shadow: 2px 2px white;
+        cursor: hand; }
 
-h2 {
-  margin-top: 1em;
-  padding-top: 1em; }
-
-h1, h2, strong {
-  color: #333; }
-
-code,
-pre {
-  background: #f5f7f9;
-  border-bottom: 1px solid #d8dee9;
-  color: #a7adba;
-  border-left: 2px solid #69c; }
-
-code {
-  padding: 2px 4px;
-  vertical-align: text-bottom; }
-
-pre {
-  padding: 1em; }
-
-a {
-  color: #e81c4f; }
-
-.test {
-  background-color: red; }
-
-.main {
-  height: 100%;
+img {
   width: 100%;
-  background-color: gray; }
+  height: auto;
+  max-width: 100%; }
 
-ul {
-  background-color: #333; }
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-nav li {
-  display: inline-block; }
-nav a {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none; }
-
-.box {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px; }
-
-.message, .success, .error {
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #333; }
-
-.success {
-  border-color: green; }
-
-.error {
-  border-color: blue; }
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */ }
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */ }
 
 /*# sourceMappingURL=style.css.map */

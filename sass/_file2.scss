@@ -48,3 +48,26 @@ nav {
   @extend .message;
   border-color: blue;
 }
+
+
+//this project
+.header{
+  min-height: 1em;
+  top:0;
+  left:0;
+  right:0;
+  width: 100%;
+  z-index: 11;
+}
+.main {
+  @include border-radius(0.7em);
+}
+.gameportalLeft{
+  display: inline-block;
+  float: left;
+  min-height: 30em;
+}
+.gameportalRight{
+  display: inline-block;
+  float: right;
+}
